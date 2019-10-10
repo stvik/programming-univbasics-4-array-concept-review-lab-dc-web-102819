@@ -26,12 +26,12 @@ end
 def find_min_value(array)
   # Add your solution here
   i = 0
-  max = 1.0
+  min = 1.0/0
   while i < array.length do
-    if array[i] < max
-      max = array[i]
+    if array[i] < min
+      min = array[i]
     end
     i += 1
   end
-  max
+  min
 end
